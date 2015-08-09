@@ -6,10 +6,9 @@ include("header.html");
  <head>
 	 <meta charset="utf-8">
 	 <title>Shop</title>
-	 <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
 	 <link href="media-queries.css" rel="stylesheet" type="text/css">
 	 <link rel="stylesheet" type="text/css" href="index.css">
-	 <script type = 'text/javascript' src="anim.js"></script>
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	 <script type="text/javascript" src="jquery.js"></script>
 		 
