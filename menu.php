@@ -63,7 +63,7 @@ function show($id_cat){
 			<th><img src = "'.$product['image'].'" width = "250px" /></th>
 		</tr>
 		<tr>
-		<td><button onclick = "add_to_cart('.$product['id'].')" name="'.$product['id'].'" ><img src = "img/cart%202.png" width = "27px">'.$product['name'].'
+		<td><button onclick = "add_to_cart('.$product['id'].', '.$product['price'].')" name="'.$product['id'].'" ><img src = "img/cart%202.png" width = "27px">'.$product['name'].'
 		</button>
 		<input type="submit" style = " width: 50px" value="'.$product['price'].'" name = "'.$product['price'].'" >
 		</td>
@@ -82,7 +82,7 @@ if (empty($_SESSION['products'])) {
 echo 'Ваша корзина пуста';
 }
 else {
-echo 'Товаров в корзине '.$_SESSION['products_incart'].' на сумму '.$_SESSION['cart_cost'];
+echo 'Товаров в корзине '.$_SESSION['products_incart'].' на сумму '.$_SESSION['cart_price'];
 }
 	?></div>
 <div class="title"><p><? echo $title ?></p></div>
