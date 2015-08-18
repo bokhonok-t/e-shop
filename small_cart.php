@@ -1,28 +1,24 @@
-<?
-	session_start();
-	include_once "cart.php";
-	include ("header.html");
-?>
 <!DOCTYPE>
 <html>
-	<head>
-		<script type="text/javascript"></script>
-		<link rel="stylesheet" type="text/css" href="menu.css">
-		<title>Cart</title>
-	</head>
-	<body>
-		<div class = "small_cart" id = "cart_interface">
-			<?
-				if(empty($_SESSION['product'])) {
-					echo 'Ваша корзина пуста';
-				}
-				else{
-					
-					echo 'Товаров в корзине '.$_SESSION['products_incart'].' на сумму '.$_SESSION['cart_cost'];
-				}
-			?>
-		</div>
-		<td>
-<button onclick="remove_from_cart(<?php echo $key ?>)">удалить</button>
-</td>
+    <div class="small_cart">
+    <h2>Cart</h2>
+<?
+if (empty($_SESSION['products'])) {
+    echo 'Empty cart';
+}
+else {
+    echo '<table>';
+    foreach($_SESSION['products'] as $d){
+        echo '<tr>
+                <td>'.$d[name].'</td> 
+                <td>'.$d[`count`].'</td>
+                <td>'.$d[price]*$d[`count`].'</td></tr>';
+    }
+    echo '</table>
+             </br>Total: '.$_SESSION['cart_price'].'
+        <div class = "button">
+            <a href="order.php"> Checkout </a>
+        </div>';
+}
+	?></div>
 </html>
