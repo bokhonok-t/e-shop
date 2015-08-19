@@ -1,0 +1,23 @@
+.fields{
+	position: absolute;
+	top: 40%;
+	left: 42%;
+	width: 300px;
+	height: 500px;
+}
+
+.fields input{
+	position: relative;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 45px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+	
+}
+
+.fields:focus{
+	border-color: brown;
+}

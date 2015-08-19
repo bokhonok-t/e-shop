@@ -1,0 +1,239 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,200,300,100,500,700,600,800,900);
+@import url(/newfont.ttf);
+@font-face {
+    font-family: mr de haviland; 
+    src: local("mr de haviland"),
+		url(/newfont.ttf);
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	margin: 0px;
+}
+
+.wrapper {
+	position: fixed;
+	margin: -8px -8px;
+	width: 100%;
+	text-align: center;
+}
+
+
+#navigation {
+	list-style:none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	font-weight: 500;
+}
+
+#navigation li {
+    display: inline-block;	
+	transition: left .6s ease-in-out, width .6s ease-in-out;
+	transition-timing-function: ease-in-out, ease-in-out;
+	border-top: 4px solid;
+	border-top-color: white;
+	box-sizing: border-box;
+	
+}
+
+#navigation li:hover {
+	border-color: black;
+}
+
+#navigation li a {
+	display: block;
+	padding: 0 20px;
+	text-decoration: none;
+	line-height: 60px;
+	color: black;
+	right: 50%; 
+	}
+
+.transbg{
+	background-color: rgba(60, 130, 190, 0.7)!important;
+}
+
+.caption{
+	position: absolute;
+	top: 12%;
+	left: 37.5%;
+	width: 25%;
+	border: 4px solid;
+	text-align: center;
+	font-size: 400%; 
+	
+}
+.caption span{
+	position: relative;
+	top: 40%;
+}
+
+.words p{
+	position: absolute;
+	top: 25%;
+	left: 44%;
+	font-size: 35px
+}
+
+.category{
+	position: absolute;
+	top: 37%;
+	width: 50%;
+	left: 25%;
+	padding: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+#category li{
+	display: inline-block;
+	margin-left: 30px;
+	transition: left .6s ease-in-out, width .6s ease-in-out;
+	transition-timing-function: ease-in-out, ease-in-out;
+	
+	
+}
+
+#category{
+	padding-left: 0px;
+}
+
+#category li input{
+	border: none;
+	font-size: 150%;
+	background-color: inherit;
+	font-family: 'Raleway', sans-serif;
+	
+	
+}
+
+.category form{
+	float: left;
+	}
+
+.products{
+	position: absolute;
+	top: 60%;
+	font-size: 150%;
+	width: 52%;
+	left: 24%;
+	margin: 0 auto;
+	display: -webkit-box;
+ 	display: -webkit-flex;
+	display: -ms-flexbox;
+ 	display: flex;
+ 	justify-content: space-around;
+	margin: 10px 0 5px 5px;
+	flex-flow: row wrap;
+}
+
+.products table{
+	padding: 0px 0px -40px 0px;
+	text-align: center;
+}
+
+.products th img{
+	margin: 36px;
+}
+
+.products input{
+	border: none;
+	background-color: inherit;
+	font-family: 'Raleway', sans-serif;
+}
+
+.products button{
+	border: none;
+	background-color: inherit;
+	font-family: 'Raleway', sans-serif;
+	vertical-align: middle;
+	position: relative;
+	margin: 0px 0px 0px 0px;
+	font-size: 20px;
+}
+.product button img{
+	position: relative;
+	margin: 0;
+	display: block;
+}
+.title{
+	position: absolute;
+	top: 50%;
+	width: 950px;
+	left: 25%;
+	text-align: center;
+}
+
+.title p{
+	font-size: 200%;
+	color: brown;
+}
+
+#toTop {
+	display: none;
+	border: 2px solid;
+	opacity: 0.5;
+	width: 70px;
+	text-align:center;
+	padding:5px;
+	position:fixed;
+	bottom:2%;
+	right:12%;
+	cursor:pointer;
+	color:gray;
+}
+
+.small_cart{
+    position: fixed;
+    top: 35%;
+    right: 10%;
+      -ms-transition: opacity 350ms ease;
+  -webkit-transition: opacity 350ms ease;
+  -moz-transition: opacity 350ms ease;
+  -o-transition: opacity 350ms ease;
+  transition: opacity 350ms ease;
+}
+
+.small_cart p{
+	text-align: center;
+	margin:0px;
+    font-size: 60px;
+    font-family: mr de haviland, cursive;
+}
+
+.small_cart td:first-child{
+	opacity: 0.4;
+}
+
+.small_cart td:hover{
+	opacity: 1;
+}
+
+.small_cart tr:nth-child(even){
+    background-color: rgba(0,0,0,0.1);
+}
+
+.small_cart td:nth-child(3){
+    background-color: black;
+    color: white;
+}
+
+.button{
+    padding: 16px;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 1px solid;
+	cursor: pointer;
+}
+
+.small_cart table{
+	margin: 0px 0px 6px 0px ;
+}
