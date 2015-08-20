@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,200,300,100,500,700,600,800,90 0);
 .fields{
 	position: absolute;
 	top: 40%;
@@ -9,15 +10,47 @@
 .fields input{
 	position: relative;
 	margin-bottom: 20px;
+	border-color: darkgray;
 	width: 300px;
 	height: 45px;
-	border-top: none;
 	border-left: none;
 	border-right: none;
+	border-top: none;
 	outline: none;
-	
+	text-indent: 3em;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
 }
 
-.fields:focus{
-	border-color: brown;
+.fields input[id="user"]{
+	background-image: url(img/user2.png);
+	background-repeat: no-repeat;
+}
+
+.fields input[id="address"]{
+	background-image: url(img/home2.png);
+	background-repeat: no-repeat;
+}
+
+.fields input[id="phone"]{
+	background-image: url(img/phone2.png);
+	background-repeat: no-repeat;
+}
+
+.fields input[id="user"]:focus{
+	border-color: black;
+	background-image: url(img/user.png);
+	background-repeat: no-repeat;
+}
+
+.fields input[id="address"]:focus{
+	border-color: black;
+	background-image: url(img/home.png);
+	background-repeat: no-repeat;
+}
+
+.fields input[id="phone"]:focus{
+	border-color: black;
+	background-image: url(img/phone.png);
+	background-repeat: no-repeat;
 }
